@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+@import url(./header.css);
+@import url(./main.css);
+@import url(./footer.css);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Oswald", sans-serif;
+}
+:root {
+  --black-bean: #250902ff;
+  --black-bean-2: #38040eff;
+  --rosewood: #640d14ff;
+  --falu-red: #800e13ff;
+  --auburn: #ad2831ff;
+}
