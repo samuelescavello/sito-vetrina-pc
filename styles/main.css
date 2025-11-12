@@ -1,0 +1,82 @@
+main {
+  background: lightgray;
+  text-align: center;
+  font-family: sans-serif;
+  color: #fefefe;
+}
+.container {
+  position: relative;
+  width: 320px;
+  margin: 100px auto 0 auto;
+  perspective: 1000px;
+}
+
+.carousel {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  animation: rotate360 60s infinite forwards linear;
+}
+.carousel__face {
+  position: absolute;
+  width: 300px;
+  height: 187px;
+  top: 20px;
+  left: 10px;
+  right: 10px;
+  background-size: cover;
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+  display: flex;
+}
+
+span {
+  margin: auto;
+  font-size: 2rem;
+}
+
+.carousel__face:nth-child(1) {
+  background-image: url("https://www.vgmag.it/wp-content/uploads/2024/10/BYuKPtjHVECRhLvzThCsaL-1600x900.jpg");
+  transform: rotateY(0deg) translateZ(430px);
+}
+.carousel__face:nth-child(2) {
+  background-image: url("https://assets2.razerzone.com/images/pnx.assets/7bc4fdadfb8103e25f73618f5c4f8e42/kv-hero-desktop.webp");
+  transform: rotateY(40deg) translateZ(430px);
+}
+.carousel__face:nth-child(3) {
+  background-image: url("https://p4.wallpaperbetter.com/wallpaper/71/77/316/nvidia-computer-pc-gaming-gpus-wallpaper-preview.jpg");
+  transform: rotateY(80deg) translateZ(430px);
+}
+.carousel__face:nth-child(4) {
+  background-image: url("https://hd2.tudocdn.net/940284?w=824&h=494");
+  transform: rotateY(120deg) translateZ(430px);
+}
+.carousel__face:nth-child(5) {
+  background-image: url("https://assets2.razerzone.com/images/pnx.assets/8406f9ddd467cf7bd3e7f229217b9602/razer-iskur-v2.webp");
+  transform: rotateY(160deg) translateZ(430px);
+}
+.carousel__face:nth-child(6) {
+  background-image: url("https://www.digitaltrends.com/wp-content/uploads/2022/07/asus-4K-hdmi-21.jpg?fit=720%2C550&p=1");
+  transform: rotateY(200deg) translateZ(430px);
+}
+.carousel__face:nth-child(7) {
+  background-image: url("https://wallpapers.com/images/hd/shelf-desktop-black-and-white-outlines-lw2wcfea17hf9hhh.jpg");
+  transform: rotateY(240deg) translateZ(430px);
+}
+.carousel__face:nth-child(8) {
+  background-image: url("https://redgaming.it/161816-large_default/tappetino-per-mouse-glorious-pc-gaming-race-g-xl-nero-spedizione-immediata.jpg");
+  transform: rotateY(280deg) translateZ(430px);
+}
+.carousel__face:nth-child(9) {
+  background-image: url("https://static.vecteezy.com/ti/vettori-gratis/p1/560562-illustrazione-del-microfono-su-sfondo-nero-vettoriale.jpg");
+  transform: rotateY(320deg) translateZ(430px);
+}
+
+@keyframes rotate360 {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(-360deg);
+  }
+}
