@@ -9,6 +9,7 @@
 }
 body {
   font-family: "Oswald", sans-serif;
+  background: linear-gradient(to right, #800e13ff, #38040eff);
 }
 :root {
   --black-bean: #250902ff;
