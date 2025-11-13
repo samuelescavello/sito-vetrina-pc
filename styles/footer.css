@@ -1,5 +1,6 @@
 footer p {
-  height: 20px;
+  height: 30px;
   background-color: black;
   color: white;
+  padding-left: 10px;
 }

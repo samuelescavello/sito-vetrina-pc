@@ -10,6 +10,12 @@
 body {
   font-family: "Oswald", sans-serif;
   background: linear-gradient(to right, #800e13ff, #38040eff);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+main {
+  flex-grow: 2;
 }
 :root {
   --black-bean: #250902ff;
