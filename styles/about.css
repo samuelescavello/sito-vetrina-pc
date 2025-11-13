@@ -37,6 +37,11 @@
   line-height: 1.6;
 }
 
+.about a {
+  color: white;
+  padding-right: 20px;
+}
+
 /* responsive */
 @media (max-width: 768px) {
   .about-content {
